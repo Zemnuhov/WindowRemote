@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "WindowRemoote"
+include ':app'
+include ':core-ble-device-scan-impl'
+include ':utils'
+include ':core-ble-device-scan-api'
+include ':core-database-api'
+include ':core-bluetooth-communication-impl'
+include ':core-bluetooth-communication-api'
